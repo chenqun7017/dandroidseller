@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/public_head" />
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="74px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="54px"
+            android:text="一级分类"
+            android:textColor="@color/black"
+            android:textSize="38px" />
+
+        <TextView
+            android:id="@+id/tv_spiner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="54px"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="150px"
+            android:textSize="38px"
+            android:paddingRight="30px"
+            android:drawableRight="@drawable/play"
+            android:background="@drawable/slaes" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="54px"
+            android:text="菜名"
+            android:textColor="@color/black"
+            android:textSize="38px" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="115px"
+            android:layout_marginRight="150px"
+            android:lines="1"
+            android:ellipsize="end"
+            android:background="@drawable/slaes"
+            android:gravity="center_vertical"
+            android:hint="输入菜名"
+            android:paddingLeft="54px"
+            android:textSize="38px" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="54px"
+            android:text="简介"
+            android:textColor="@color/black"
+            android:textSize="38px" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="115px"
+            android:layout_marginRight="150px"
+            android:background="@drawable/slaes"
+            android:gravity="center_vertical"
+            android:hint="简单介绍"
+            android:lines="1"
+            android:ellipsize="end"
+            android:paddingLeft="54px"
+            android:textSize="38px" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="54px"
+            android:text="价格"
+            android:textColor="@color/black"
+            android:textSize="38px" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="115px"
+            android:layout_marginRight="150px"
+            android:background="@drawable/slaes"
+            android:gravity="center_vertical"
+            android:hint="菜品价格"
+            android:maxLength="5"
+            android:inputType="number"
+            android:paddingLeft="54px"
+            android:textSize="38px" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="58px"
+            android:text="图片"
+            android:textSize="38px" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/ll_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="116px"
+            android:layout_marginTop="24px"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/add" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22px"
+                android:text="添加图片"
+                android:textColor="@color/light_grey"
+                android:textSize="38px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <ImageView
+            android:id="@+id/rv_show_photo"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_marginLeft="122px"
+            android:src="@drawable/sss"
+            app:layout_auto_basewidth="height" />
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <CheckBox
+        android:id="@+id/check_promotion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="58px"
+        android:layout_marginTop="90px"
+        android:paddingTop="30px"
+        android:paddingBottom="30px"
+        android:paddingRight="50px"
+        android:button="@null"
+        android:drawableRight="@drawable/checkbox_style"
+        android:drawablePadding="80px"
+        android:text="促销菜"
+        android:textColor="@color/black"
+        android:textSize="38px" />
+
+
+    <CheckBox
+        android:id="@+id/check_false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="58px"
+        android:layout_marginTop="60px"
+        android:paddingTop="30px"
+        android:paddingBottom="30px"
+        android:paddingRight="50px"
+        android:button="@null"
+        android:drawableRight="@drawable/checkbox_style"
+        android:text="是否禁用"
+        android:drawablePadding="42px"
+        android:textColor="@color/black"
+        android:textSize="38px" />
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80px"
+        android:background="@null"
+        android:src="@drawable/btn_addmenu" />
+
+
+</com.zhy.autolayout.AutoLinearLayout>

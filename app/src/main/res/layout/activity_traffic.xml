@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/public_head"/>
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="92px"
+     android:textColor="@color/grey"
+    android:text="累计人数"
+    android:textSize="52px"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40px"
+        android:text="5783"
+        android:textColor="@color/cyan"
+        android:textSize="52px"/>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_marginTop="76px"
+        android:layout_width="match_parent"
+        android:layout_height="188px">
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="58px"
+            android:layout_marginRight="1px"
+            android:background="@color/hot_green"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+              android:layout_gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:text="昨天人数"
+                android:textSize="52px"
+                android:layout_marginTop="30px"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:text="57"
+                android:textSize="52px"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black"/>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/hot_green"
+            android:layout_marginRight="58px"
+            android:layout_marginLeft="1px"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:text="今天人数"
+                android:textSize="52px"
+                android:layout_marginTop="30px"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:text="57"
+                android:textSize="52px"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black"/>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="3px"
+    android:layout_marginTop="20px"
+    android:background="@color/grey_line">
+
+</View>
+
+
+
+</com.zhy.autolayout.AutoLinearLayout>

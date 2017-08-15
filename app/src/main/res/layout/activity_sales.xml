@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/public_head" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="88px"
+            android:text="首单免"
+            android:textColor="@color/black"
+            android:textSize="38px" />
+
+        <EditText
+            android:id="@+id/et_fistprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="18px"
+            android:background="@drawable/slaes"
+            android:textSize="38px"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="18px"
+            android:text="元"
+            android:textColor="@color/black"
+            android:textSize="38px" />
+
+
+
+        <CheckBox
+            android:id="@+id/check_selectprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="100px"
+            android:button="@null"
+            android:paddingBottom="18px"
+            android:paddingLeft="58px"
+            android:paddingRight="58px"
+            android:drawableRight="@drawable/checkbox_style"
+            android:paddingTop="20px"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginTop="28px"
+        android:background="@color/grey_line" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="164px"
+            android:text="满"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="38px" />
+
+        <EditText
+            android:id="@+id/et_allprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="18px"
+            android:scrollbars="none"
+            android:textSize="38px"
+            android:textColor="@color/black"
+            android:background="@drawable/tingshout"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="18px"
+            android:text="减"
+            android:textColor="@color/black"
+            android:textSize="38px" />
+
+        <EditText
+            android:id="@+id/et_delprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="24px"
+            android:background="@drawable/tingshout"
+            android:textSize="38px"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20px"
+            android:text="元"
+            android:textColor="@color/black"
+            android:textSize="38px" />
+
+        <TextView
+            android:id="@+id/tv_add_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="90px"
+            android:padding="46px"
+            android:text="添加"
+            android:textColor="@color/black"
+            android:textSize="37px" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <ListView
+        android:id="@+id/lv_sales"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="@color/transparent"
+        android:divider="@color/grey_line"
+        android:layout_marginTop="194px">
+    </ListView>
+
+
+
+
+
+</com.zhy.autolayout.AutoLinearLayout>

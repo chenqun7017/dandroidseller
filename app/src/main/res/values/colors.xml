@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffff</color><!--background背景色与字体-->
+    <color name="cyan">#23bbf3</color><!--用于导行栏背景和需求强调的文字和按钮-->
+    <color name="black">#333333</color><!--用于重要级信息,页内标题信息-->
+    <color name="grey">#666666</color><!--用于普通级别信息-->
+    <color name="light_grey">#bbbbbb</color><!--用于指引用户操作的引导性文字-->
+    <color name="background_grey">#efefef</color><!--背景色-->
+
+    <color name="cyan_line">#2398c3</color><!--用于重要模块分割-->
+    <color name="grey_line">#e5e5e5</color><!--用于普通模块分割-->
+
+    <color name="hot_red">#ff0f0f</color><!--用于热度排行第一模块-->
+    <color name="hot_yellow">#ff970f</color><!--用于热度排行第二模块-->
+    <color name="hot_green">#77beea</color><!--用于热度排行第三模块-->
+
+    <color name="register_grey">#aaaaaa</color><!--注册页面字体色-->
+    <color name="menu_grey">#f2f2f2</color><!--餐厅管理-->
+    <color name="transparent">#00000000</color><!--透明色-->
+    <color name="order_derails_background">#EFEFEF</color><!--订单详情页面背景色-->
+
+
+</resources>

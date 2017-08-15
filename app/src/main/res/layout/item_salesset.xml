@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff1111"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="83px"
+        android:textSize="38px"
+        android:text="促销一:"/>
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff1111"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/tv_number"
+        android:layout_marginLeft="24px"
+        android:textSize="38px"
+        android:text="满100元减50元"/>
+
+    <TextView
+        android:id="@+id/tv_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:padding="48px"
+        android:layout_marginRight="48px"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:textSize="38px"
+        android:text="删除"/>
+
+</com.zhy.autolayout.AutoRelativeLayout>

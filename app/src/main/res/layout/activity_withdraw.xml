@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/public_head" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="164px"
+            android:layout_height="164px"
+            app:layout_auto_basewidth="height"
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="115px"
+            android:src="@drawable/sss"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="0px" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="138px"
+            android:layout_marginLeft="44px"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="36px"
+                android:textColor="@color/black"
+                android:text="工商银行尾号5665" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40px"
+                android:textSize="36px"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:text="可转出该卡的额度为900元" />
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+<com.zhy.autolayout.AutoLinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="138px"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/et_money"
+        android:layout_width="wrap_content"
+        android:layout_height="95px"
+        android:layout_marginLeft="50px"
+        android:hint="输入可提现的额度"
+        android:inputType="number"
+        android:lines="1"
+        android:maxLength="8"
+        android:gravity="center"
+        android:textSize="38px"
+        android:background="@drawable/availableforwithdrawal"/>
+    <TextView
+        android:id="@+id/tv_allwithdrawal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="38px"
+        android:layout_marginLeft="30px"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:text="全部提现"/>
+
+
+</com.zhy.autolayout.AutoLinearLayout>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4px"
+        android:text="快速转账(预计2个小时到账)"
+        android:drawablePadding="26px"
+        android:textColor="@color/black"
+        android:padding="50px"
+        android:textSize="36px"
+        android:button="@null"
+        android:drawableLeft="@drawable/checkbox_style"/>
+
+
+
+<ImageButton
+    android:id="@+id/btn_turnout"
+    android:layout_width="962px"
+    android:layout_height="80px"
+    android:layout_marginTop="144px"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/btn_withdraw"/>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

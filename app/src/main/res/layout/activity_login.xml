@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+<include layout="@layout/public_head"/>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/ll_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="126px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="100px"
+            android:layout_marginTop="40px"
+            android:layout_marginBottom="40px"
+            android:textColor="@color/black"
+            android:textSize="38px"
+            android:text="账号:" />
+
+        <EditText
+            android:id="@+id/et_userphone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxLength="11"
+            android:hint="手机号"
+            android:lines="1"
+            android:layout_marginLeft="40px"
+            android:textSize="38px"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:inputType="number"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginRight="20px"
+        android:layout_marginLeft="20px"
+        android:background="@color/grey_line">
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="30px"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100px"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="40px"
+            android:layout_marginBottom="40px"
+            android:textColor="@color/black"
+            android:textSize="38px"
+            android:text="密码:" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="wrap_content"
+            android:layout_height="150px"
+            android:lines="1"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_name"
+            android:paddingTop="40px"
+            android:paddingBottom="40px"
+            android:maxLength="12"
+            android:layout_marginLeft="40px"
+            android:hint="请输入登陆密码"
+            android:textSize="38px"
+            android:gravity="center_vertical"
+            android:layout_toLeftOf="@+id/btn_eye"
+            android:background="@null"
+            android:inputType="textPassword"/>
+
+        <ImageButton
+            android:id="@+id/btn_eye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:padding="43px"
+            android:layout_marginRight="40px"
+            android:layout_centerVertical="true"
+            android:src="@drawable/eye_nor"/>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginRight="20px"
+        android:layout_marginLeft="20px"
+        android:background="@color/grey_line">
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="124px"
+        android:background="@null"
+        android:src="@drawable/btn_login" />
+
+        <ImageButton
+            android:id="@+id/btn_register"
+            android:layout_marginTop="96px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/btn_register"
+            android:background="@null"/>
+
+</com.zhy.autolayout.AutoLinearLayout>
+

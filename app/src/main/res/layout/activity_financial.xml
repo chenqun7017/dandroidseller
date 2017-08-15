@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/public_head"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100px"
+        android:text="总金额(元)"
+        android:textColor="@color/black"
+        android:textSize="38px" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="34px"
+        android:text="$8.88"
+        android:textColor="@color/cyan"
+        android:textSize="38px" />
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="116px"
+        android:layout_height="190px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/hot_green"
+            android:layout_marginLeft="58px"
+            android:layout_marginRight="1px"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/income"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="134px"
+                android:layout_marginTop="38px"
+                android:text="累计收入(元)"
+                android:textColor="@color/white"
+                android:textSize="37px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/income"
+                android:layout_marginLeft="174px"
+                android:layout_marginTop="46px"
+                android:textColor="@color/white"
+                android:text="0.00"
+                android:textSize="37px" />
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/hot_green"
+            android:layout_marginRight="58px"
+            android:layout_marginLeft="1px"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/withdrawal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="38px"
+                android:layout_marginLeft="118px"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:text="累计提现(元)"
+                android:textSize="37px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/withdrawal"
+                android:textColor="@color/white"
+                android:layout_marginTop="46px"
+                android:layout_marginLeft="210px"
+                android:text="0.00"
+                android:textSize="37px" />
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="94px"
+        android:layout_marginLeft="28px"
+        android:layout_marginRight="58px"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_income"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="30px"
+            android:textSize="38px"
+            android:textColor="@color/black"
+            android:text="收入流水(元)" />
+
+
+        <TextView
+            android:id="@+id/tv_withdrawal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="30px"
+            android:textSize="38px"
+            android:textColor="@color/black"
+            android:text="提现流水(元)" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="64px"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/btn_withdrawa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50px"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@null"
+            android:src="@drawable/btn_withdrawals"/>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btn_withdrawa"
+            android:layout_marginTop="40px"
+            android:orientation="vertical">
+            <ListView
+                android:id="@+id/rl_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:listSelector="@color/white"
+                android:divider="@color/grey_line"/>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+
+
+
+
+</com.zhy.autolayout.AutoLinearLayout>

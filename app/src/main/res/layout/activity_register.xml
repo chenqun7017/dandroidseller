@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/public_head" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="558px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="112px"
+        android:background="@color/background_grey"
+        android:orientation="vertical">
+
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="138px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="54px"
+                android:gravity="center_vertical"
+                android:text="手机号码"
+                android:textColor="@color/black"
+                android:textSize="37px" />
+
+
+            <EditText
+                android:id="@+id/et_userphone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="50px"
+                android:background="@null"
+                android:hint="请填写手机号"
+                android:textColorHint="@color/grey_line"
+                android:gravity="center_vertical"
+                android:inputType="phone"
+                android:lines="1"
+                android:maxLength="11"
+                android:textSize="37px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/grey"/>
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="138px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_phonecode"
+                android:layout_width="146px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="54px"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:text="验证码"
+                android:textColor="@color/black"
+                android:textSize="37px" />
+
+
+            <EditText
+                android:id="@+id/et_phonecode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/tv_phonecode"
+                android:layout_toLeftOf="@+id/tv_getphonecode"
+                android:layout_marginLeft="80px"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请填写验证码"
+                android:inputType="number"
+                android:textColorHint="@color/grey_line"
+                android:lines="1"
+                android:maxLength="8"
+                android:textSize="37px" />
+
+            <TextView
+                android:id="@+id/tv_getphonecode"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="48px"
+                android:textColor="@color/cyan"
+                android:text="获取验证码"
+                android:textSize="37px"
+                android:gravity="center_vertical"/>
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/grey"/>
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="138px">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="54px"
+                android:gravity="center_vertical"
+                android:text="登陆密码"
+                android:textColor="@color/black"
+                android:textSize="37px" />
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50px"
+                android:layout_toRightOf="@+id/tv_name"
+                android:textColorHint="@color/grey_line"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="组合数字，字母或符号"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:maxLength="15"
+                android:textSize="37px" />
+
+            <ImageButton
+                android:id="@+id/btn_eye"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:paddingLeft="40px"
+                android:paddingRight="40px"
+                android:src="@drawable/eye_nor" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/grey">
+
+        </View>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="138px">
+
+            <TextView
+                android:id="@+id/tv_again_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="54px"
+                android:gravity="center"
+                android:text="确认密码"
+                android:textColor="@color/black"
+                android:textSize="37px" />
+
+            <EditText
+                android:id="@+id/et_again_password"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50px"
+                android:layout_toRightOf="@+id/tv_again_name"
+                android:textColorHint="@color/grey_line"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="组合数字，字母或符号"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:maxLength="15"
+                android:textSize="37px" />
+
+
+            <ImageButton
+                android:id="@+id/btn_again_eye"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:paddingLeft="40px"
+                android:paddingRight="40px"
+                android:src="@drawable/eye_nor" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/btn_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="130px"
+        android:background="@null"
+        android:src="@drawable/register_nor" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40px"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300px"
+            android:text="点击上面注册按钮,表示您同意"
+            android:textColor="@color/register_grey"
+            android:textSize="26px"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:textSize="25px"
+            android:textColor="@color/cyan"
+            android:text="服务条款"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+</com.zhy.autolayout.AutoLinearLayout>
